@@ -36,11 +36,12 @@ public class TarjetaController {
         String home = System.getProperty("user.home");
         File f = new File(home + File.separator + "Desktop" + File.separator + "binaryTest.bin");
 
-        // ClassPathResource resource = new ClassPathResource("OperacionesEnClaro.txt");
-        // InputStream inputStreamtest = resource.getInputStream();
+        URL res = getClass().getClassLoader().getResource("OperacionesBinariasTest.bin");
+        File file = Paths.get(res.toURI()).toFile();
+        String absolutePath = file.getAbsolutePath();
 
         try (
-            InputStream inputStream = new FileInputStream(f);
+            InputStream inputStream = new FileInputStream(file);
         ) {
 
             byte[] array = inputStream.readAllBytes();
