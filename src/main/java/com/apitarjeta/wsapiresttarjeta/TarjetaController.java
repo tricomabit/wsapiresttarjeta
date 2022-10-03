@@ -130,26 +130,6 @@ public class TarjetaController {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-
-
-
-
-            // for(int i = 0; i < array.length; ++i) { 
-            //     System.out.println("bit number " + (i + 1) + " = " + array[i]); 
-            // }
-
-
-
-            // // String s = new String(array);     
-
-            // ByteArrayInputStream bais = new ByteArrayInputStream(array);
-            // int ch;
-            // ch = bais.read();
-            // while (ch != -1) {
-            //     System.out.print((char) ch);
-            //     ch = bais.read();
-            // }
-
             
             // String strHexa = byteArrayToHexStringSinEspacios(array);
           
